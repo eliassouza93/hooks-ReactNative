@@ -12,7 +12,7 @@ export default function Estrelas({
         const listaEstrelas = []
         for (let i = 0; i < 5; i++) {
             listaEstrelas.push(
-                <Estrela onPress={() => setQuantidade(i + 1)} desabilitada={!editavel} preenchida={i < quantidade} grande={grande} />
+                <Estrela key={i} onPress={() => setQuantidade(i + 1)} desabilitada={!editavel} preenchida={i < quantidade} grande={grande} />
             )
         }
         return listaEstrelas;
