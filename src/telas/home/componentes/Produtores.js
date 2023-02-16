@@ -5,6 +5,7 @@ import Produtor from "./Produtor";
 
 
 export default function Produtores({ topo: Topo }) {
+    
     const [titulo, setTitulo] = useState('')
     const [lista, setLista] = useState([])
 
@@ -19,6 +20,7 @@ export default function Produtores({ topo: Topo }) {
     const topoLista = () => {
         return (
             <>
+
                 <Topo />
                 <Text style={estilos.titulo} > {titulo} </Text>
             </>
